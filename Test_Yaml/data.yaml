@@ -1,0 +1,10 @@
+Test:
+  login_data01:
+    name: mm
+    pwd: 123
+  login_data02:
+    name: hh
+    pwd: 234
+  login_data03:
+    name: ll
+    pwd: 345

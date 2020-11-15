@@ -14,13 +14,18 @@ Moments_btn = (By.XPATH, "//*[@resource-id='android:id/title'][@text='朋友圈'
 """
 # 第一条朋友圈
 First_moment = (By.ID, "com.tencent.mm:id/b_l")
+# 朋友圈的发送者
+pyq_name = (By.ID, "com.tencent.mm:id/e3x")
 
 """
     微信搜索页面
 """
+# 主页搜索按钮
+search_buttonHome = (By.ID, "com.tencent.mm:id/f8y")
+# 通讯录与发现页面搜索按钮
+search_button = (By.ID, "com.tencent.mm:id/cn1")
 
-# 搜索按钮
-search_button = (By.ID, "com.tencent.mm:id/f8y")
+
 # 搜索输入框
 search_text = (By.ID, "com.tencent.mm:id/bhn")
 # 搜索结果

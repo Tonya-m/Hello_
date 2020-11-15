@@ -1,3 +1,4 @@
+
 from selenium.webdriver.support.wait import WebDriverWait
 
 
@@ -17,13 +18,15 @@ class Base:
     def input_element(self, loc, text):
         input_ele = self.find_element(loc)
         input_ele.clear()
-        input_ele.sendkeys(text)
+        input_ele.send_keys(text)
 
-    def get_content_element(self, loc):
-        return self.find_element(loc).text()
+    def get_content_element(self, loc, position):
+        return self.find_elements(loc)[position].get_attribute("text")
+        # first_con = self.find_elements(loc)[0]
+        # return first_con.text()
 
-    def back_parent(self):
-        self.driver.sendKeyEvent(4)
+    def sys_key_event(self, key_code):
+        self.driver.keyevent(key_code)
 
     def swipe(self, x1, y1, x2, y2):
         self.driver.swipe(x1, y1, x2, y2, 1000)

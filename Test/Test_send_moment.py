@@ -9,8 +9,9 @@ class TestSendMoment():
 
     def test_SendMent(self):
         message = Get_moment(self.driver)
-        ss = Send_sms(self.driver)
-        ss.send_message("狗蛋", message.get_moment())
+        message.get_moment()
+        # ss = Send_sms(self.driver)
+        # ss.send_message("狗蛋", message.get_moment())
         self.driver.quit()
 
 
